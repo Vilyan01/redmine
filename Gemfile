@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '>= 2.5.0', '< 3.1.0'
+ruby '2.6.6'
 gem 'bundler', '>= 1.12.0'
 
 gem 'rails', '6.1.4.1'
@@ -21,6 +21,7 @@ gem 'rubyzip', '~> 2.3.0'
 gem 'net-smtp', '~> 0.3.0'
 gem 'net-imap', '~> 0.2.2'
 gem 'net-pop', '~> 0.1.1'
+gem 'rails_12factor'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
