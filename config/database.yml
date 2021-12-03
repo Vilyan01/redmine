@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  url: <%= ENV.fetch('DATABASE_URL') %>
+  database: rave_redmine_development
+
+test:
+  <<: *default
+  host: localhost
+  username: postgres
+  password: postgres
+  database: rails-github-action_test
+
+production:
+  <<: *default
+  database: rave_redmine_production
+  url: <%= ENV.fetch('DATABASE_URL') %>
